@@ -1,0 +1,15 @@
+<div class="admin-login">
+    <div class="login">
+        <h2>Admin login</h2>
+        <form class="common-form" (ngSubmit)="onLogin(adminLogin)" #adminLogin="ngForm">
+            <label class="form-label" for="name">Username</label>
+            <input class="form-input" type="text" name="username" id="name" ngModel autocomplete="off" required>
+    
+            <label class="form-label" for="pass">Password</label>
+            <input class="form-input" type="text" name="pass" id="pass" ngModel autocomplete="off" required>
+    
+            <button class="form-button" type="submit" [disabled]="!adminLogin.valid" [ngClass]="adminLogin.valid==true? 'A': 'B'">Login</button>
+        </form>
+        <p>{{LoginErrorOrNot}}</p>
+    </div>
+</div>

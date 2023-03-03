@@ -1,0 +1,41 @@
+label {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.settings-form{
+    margin-top: 55px;
+    padding: 25px 10px;
+}
+
+label{
+    font-weight: 600;
+}
+
+.label-input{
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    display: flex;
+}
+
+.label-para{
+    display: flex;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+input{
+    width: 50px;
+}
+
+form{
+    background-color: aliceblue;
+    padding: 20px 20px
+}
+
+button{
+    margin-left: 10px;
+    margin-right: 25px;
+}

@@ -1,0 +1,28 @@
+<div class="form-div">
+    <h3 class="create-product-form-head">Create New Product</h3>
+    <form class="create-product-form" [formGroup]="createProductRF" (ngSubmit)="onCreateProduct()">
+        <label for="pname">Product Name</label>
+        <input type="text" id="pname" autocomplete="off" formControlName="productname" >
+
+        <label for="expiry">Expiry</label>
+        <input type="date" id="expiry" autocomplete="off" formControlName="expiry" >
+
+        <label for="stock">Stock</label>
+        <input type="number" id="stock" autocomplete="off" formControlName="stock" >
+
+        <label for="heading">Heading</label>
+        <input type="text" id="heading" autocomplete="off" formControlName="heading" >
+
+        <label for="subheading">Subheading</label>
+        <input type="text" id="subheading" autocomplete="off" formControlName="subheading" >
+
+        <label for="tags">Tags</label>
+        <input type="text" id="tags" autocomplete="off" formControlName="tags">
+
+        <label for="description">Description</label>
+        <textarea type="" id="description" autocomplete="off" rows="3" formControlName="description" ></textarea>
+
+        <button type="submit" class="btn btn-primary" [disabled]="!createProductRF.valid">{{editMode==false? 'Save': 'Update'}}</button>
+        <button type="submit" class="btn btn-danger" routerLink="/homescreen">Cancel</button>
+    </form>
+</div>

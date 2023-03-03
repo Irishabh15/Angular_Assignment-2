@@ -1,0 +1,18 @@
+ <nav class="head" [ngSwitch]="routeType">
+    <ul class="list" *ngSwitchCase="'default'">
+        <li><a routerLink="login">Login</a></li>
+    </ul>
+    <ul class="list" *ngSwitchCase="'home'">
+        <li><a routerLink="homescreen">Home</a></li>
+        <li><a routerLink="create-product" [ngClass]="disableCreate? 'isNotDisabled': 'isDisabled'">Create Product</a></li>
+        <li><a routerLink="quick-create-product" [ngClass]="disableCreate? 'isNotDisabled': 'isDisabled'">Quick create product</a></li>
+        <li><a class='logoutlink' (click)="logout()">Logout</a></li>
+    </ul>
+    <ul class="list" *ngSwitchCase="'adminsection'">
+        <li><a routerLink="settings">Settings</a></li>
+        <li><a class='logoutlink' (click)="logout()">Logout</a></li>
+        <li id="loggedInUserName">{{loggedUser}} (admin)</li>
+    </ul>
+</nav>
+
+

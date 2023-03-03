@@ -1,0 +1,50 @@
+nav{
+    background-color: deepskyblue;
+    padding: 15px 15px;
+}
+
+ul{
+    display: flex;
+    margin-bottom: 0;
+}
+
+li{
+    list-style: none;
+    width: fit-content;
+    text-align: center;
+    padding-right: 40px;
+}
+
+.logoutlink{
+    transition: all 0.2s linear ;
+}
+
+
+.logoutlink:hover, a:focus {
+    color: white;
+}
+
+#loggedInUserName{
+    position: absolute;
+    right: 0;
+}
+
+.isDisabled{
+    pointer-events: none;
+}
+
+.isNotDisabled{
+    pointer-events: visible;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+

@@ -1,0 +1,500 @@
+{
+  "admin": [
+    {
+      "username": "abc@123",
+      "password": "12345",
+      "name": "Rishabh Sharma"
+    },
+    {
+      "username": "rishabh015",
+      "password": "12345",
+      "name": "Rishabh Sharma"
+    }
+  ],
+  "users": [
+    {
+      "name": "Rishabh",
+      "email": "rishabh@gmail.com",
+      "pass": "12345",
+      "id": 1
+    },
+    {
+      "name": "Kabir",
+      "email": "kabir@gmail.com",
+      "pass": "12345",
+      "id": 2
+    },
+    {
+      "name": "Arjun",
+      "email": "arjun@gmail.com",
+      "pass": "12345",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "productname": "Organic Apples",
+      "expiry": "2023-03-15",
+      "stock": 200,
+      "heading": "Fresh and Healthy Apples",
+      "subheading": "Hand-picked from our orchards",
+      "tags": "#Organic #Healthy #Fresh",
+      "description": "Organic and Healthy Fresh Apples",
+      "id": 1
+    },
+    {
+      "productname": "Whole Wheat Bread",
+      "expiry": "2023-03-06",
+      "stock": 150,
+      "heading": "Nutritious and Delicious Bread",
+      "subheading": "Made with 100% whole wheat flour",
+      "tags": "#Nutritious",
+      "description": "Whole Wheat Bread",
+      "id": 2
+    },
+    {
+      "productname": "Greek Yogurt",
+      "expiry": "2023-02-25",
+      "stock": 100,
+      "heading": "Creamy and Protien Yogurt",
+      "subheading": "Made with all-natural Ingredients",
+      "tags": "#Greek #Yogurt",
+      "description": "Creamy and Protien Yogurt",
+      "id": 3
+    },
+    {
+      "productname": "Dark Chocolate",
+      "expiry": "2023-02-25",
+      "stock": 50,
+      "heading": "Indulge in Rich and Decadent",
+      "subheading": "Made with 70% cocoa",
+      "tags": "#Dark #Chocolate",
+      "description": "Indulge in Rich and Decadent",
+      "id": 4
+    },
+    {
+      "productname": "Quinoa Salad",
+      "expiry": "2023-03-25",
+      "stock": 30,
+      "heading": "Healthy and Flavorful Salad",
+      "subheading": "Made with Fresh Vegetables",
+      "tags": "#Salad #Flavorful",
+      "description": "Healthy and Flavorful Salad",
+      "id": 5
+    }
+  ],
+  "settings": [
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": false,
+      "lastUpdatedOn": "12-52-30",
+      "id": 1
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": true,
+      "delete": false,
+      "lastUpdatedOn": "12-55-16",
+      "id": 2
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "13-2-26",
+      "id": 3
+    },
+    {
+      "edit": true,
+      "create": false,
+      "search": false,
+      "delete": false,
+      "lastUpdatedOn": "13-8-40",
+      "id": 4
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": true,
+      "delete": false,
+      "lastUpdatedOn": "13-13-7",
+      "id": 5
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "13-21-48",
+      "id": 6
+    },
+    {
+      "edit": true,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "14-17-22",
+      "id": 7
+    },
+    {
+      "edit": true,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "14-18-9",
+      "id": 8
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "14-18-53",
+      "id": 9
+    },
+    {
+      "edit": false,
+      "create": true,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "15-36-47",
+      "id": 10
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "15-42-16",
+      "id": 11
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "15-42-32",
+      "id": 12
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "15-47-4",
+      "id": 13
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "16-20-32",
+      "id": 14
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "16-30-55",
+      "id": 15
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "23-18-33",
+      "id": 16
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "23-23-0",
+      "id": 17
+    },
+    {
+      "edit": false,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "23-23-6",
+      "id": 18
+    },
+    {
+      "edit": true,
+      "create": false,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "23-27-18",
+      "id": 19
+    },
+    {
+      "edit": true,
+      "create": true,
+      "lastUpdatedOn": "23-40-45",
+      "id": 20
+    },
+    {
+      "edit": true,
+      "create": true,
+      "lastUpdatedOn": "23-40-50",
+      "id": 21
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "23-41-0",
+      "id": 22
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "23-43-25",
+      "id": 23
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "23-46-2",
+      "id": 24
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "23-47-22",
+      "id": 25
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "23-48-34",
+      "id": 26
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "23-48-38",
+      "id": 27
+    },
+    {
+      "edit": true,
+      "create": false,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "23-55-13",
+      "id": 28
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "23-56-13",
+      "id": 29
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "23-56-24",
+      "id": 30
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "23-59-59",
+      "id": 31
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "0-0-0",
+      "id": 32
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "0-0-6",
+      "id": 33
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "12-16-1",
+      "id": 34
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "12-16-7",
+      "id": 35
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "12-18-34",
+      "id": 36
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "12-18-35",
+      "id": 37
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "12-20-10",
+      "id": 38
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": false,
+      "delete": true,
+      "lastUpdatedOn": "12-20-11",
+      "id": 39
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "12-23-52",
+      "id": 40
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": false,
+      "lastUpdatedOn": "12-30-35",
+      "id": 41
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": false,
+      "lastUpdatedOn": "12-30-52",
+      "id": 42
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": false,
+      "lastUpdatedOn": "12-31-3",
+      "id": 43
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "13-37-47",
+      "id": 44
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "13-37-55",
+      "id": 45
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "13-38-47",
+      "id": 46
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "13-38-48",
+      "id": 47
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "13-38-49",
+      "id": 48
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": true,
+      "lastUpdatedOn": "13-38-49",
+      "id": 49
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": false,
+      "lastUpdatedOn": "13-39-55",
+      "id": 50
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": false,
+      "lastUpdatedOn": "13-39-56",
+      "id": 51
+    },
+    {
+      "edit": true,
+      "create": true,
+      "search": true,
+      "delete": false,
+      "lastUpdatedOn": "13-39-57",
+      "id": 52
+    }
+  ]
+}

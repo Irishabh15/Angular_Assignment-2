@@ -1,0 +1,48 @@
+
+<!-- Login page -->
+<div class="user-login" *ngIf="!showSignup; else signup">
+    <div class="login">
+        <h2>User login</h2>
+        <p>{{LoginErrorOrNot}}</p>
+        <form class="common-form" (ngSubmit)="onLogin(userLogin)" #userLogin="ngForm">
+            <label class="form-label" for="username">Username</label>
+            <input class="form-input" type="text" name="username" id="username" ngModel autocomplete="off" required>
+    
+            <label class="form-label" for="pass">Password</label>
+            <input class="form-input" type="text" name="pass" id="pass" ngModel autocomplete="off" required>
+    
+            <button class="form-button" type="submit" [disabled]="!userLogin.valid" [ngClass]="userLogin.valid==true? 'A': 'B'">Login</button>
+        </form>
+
+        <div class="signup-choice">
+            <a (click)="goToUserSignUp()">Don't have an account? Create now</a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Sign-up page -->
+<ng-template #signup>
+    <div class="user-login">
+        <div class="login">
+            <h2>User Signup</h2>
+            <p>{{SignUpErrorOrNot}}</p>
+            <form class="common-form" (ngSubmit)="onSignUp(userSignUp)" #userSignUp="ngForm">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-input" type="text" name="name" id="name" ngModel autocomplete="off" required>
+
+                <label class="form-label" for="email">Email</label>
+                <input class="form-input" type="email" name="email" id="email" ngModel autocomplete="off" required email>
+        
+                <label class="form-label" for="pass">Password</label>
+                <input class="form-input" type="text" name="pass" id="pass" ngModel autocomplete="off" required>
+        
+                <button class="form-button" type="submit" [disabled]="!userSignUp.valid" [ngClass]="userSignUp.valid==true? 'A': 'B'">Sign Up</button>
+            </form>
+    
+            <div class="signup-choice">
+                <a (click)="goToUserLogin()">Already have an account? Login</a>
+            </div>
+        </div>
+    </div>
+</ng-template>

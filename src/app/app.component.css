@@ -1,0 +1,13 @@
+app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;  /* for demo purpose */
+    background: red; /* for demo purpose */
+    /* height: 50px;    for demo purpose */
+  }
+
+  .body{
+    position: sticky;
+  }

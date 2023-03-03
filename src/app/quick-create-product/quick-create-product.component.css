@@ -1,0 +1,48 @@
+.create-product-form{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    border: solid 1px skyblue;
+}
+
+.form-div{
+    width: 900px;
+    margin: auto;
+    padding: 20px 10px;
+    margin-top: 50px;
+
+}
+
+.create-product-form-head{
+    padding: 0px 7px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 10px;
+    font-family: sans-serif;
+    color: black;
+}
+
+input{
+    margin-bottom: 40px;
+    margin-top: 3px;
+    padding: 5px 10px;
+    outline: none;
+    border-radius: 5px;
+    border: solid 1px rgb(55, 55, 55);
+}
+
+
+label{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+
+input.ng-touched.ng-invalid{
+    border: solid 1px red;
+}
+
+button{
+    margin-bottom: 10px;
+}

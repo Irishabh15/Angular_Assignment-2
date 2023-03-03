@@ -1,0 +1,18 @@
+h2{
+    text-align: center;
+    /* margin: 55px 0; */
+    font-family: math;
+    font-size: 30px;
+    padding: 21px;
+}
+
+.admin-login{
+    margin-top: 55px;
+    max-height: 450px;
+}
+
+p{
+    text-align: center;
+    color: red;
+    margin-top: 45px;
+}

@@ -1,0 +1,45 @@
+<div class="settings-form container">
+    <h2>Settings</h2>
+
+    <form (ngSubmit)="onSubmit(settingForm)" #settingForm="ngForm">
+
+        <div class="label-input">
+            <div class="label-para">
+                <label for="edit-field">Allow Edit</label>
+                <p>user can edit a product’s detail</p>
+            </div>
+            <input type="checkbox" name="edit" id="edit-field" [(ngModel)] = "allowEdit">
+        </div>
+        
+        <div class="label-input">
+            <div class="label-para">
+                <label for="create-field">Allow Create</label>
+                <p>user can create a product</p>
+            </div>
+            <input type="checkbox" name="create" id="create-field" [checked]="allowCreate" [(ngModel)] = "allowCreate">
+        </div>
+        
+    
+        <div class="label-input">
+            <div class="label-para">
+                <label for="search-field">Allow Search</label>
+                <p>user won’t see Search bar 2</p>
+            </div>
+            <input type="checkbox" name="search" id="search-field" [checked]="allowSearch" [(ngModel)] = "allowSearch">
+        </div>
+        
+    
+        <div class="label-input">
+            <div class="label-para">
+                <label for="delete-field">Allow Multiple Delete</label>
+                <p>Allows user to delete multiple products from the list.</p>
+            </div>
+            <input type="checkbox" name="delete" id="delete-field" [checked]="allowMultipleDelete" [(ngModel)] = "allowMultipleDelete">
+        </div>
+        
+
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button class="btn btn-danger" (click)="onReset()">Reset</button>
+    </form>
+    
+</div>
