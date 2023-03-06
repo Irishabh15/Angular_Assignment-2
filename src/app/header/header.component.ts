@@ -18,7 +18,7 @@ export class HeaderComponent {
   disableCreate:boolean;
 
 
-  constructor(private route: Router, private logoutservice: LogoutService, private adminservice: AdminService, private settingservice: SettingsService, private http: HttpClient){}
+  constructor(private route: Router, private logoutservice: LogoutService, private adminservice: AdminService, private settingservice: SettingsService, private http: HttpClient, , private userservice: UsersService){}
 
   ngOnInit(): void {
 
@@ -35,10 +35,7 @@ export class HeaderComponent {
 
         else if(localStorage.getItem('admin') && val.url.includes('settings')){
           this.routeType = 'adminsection'
-          // this.loggedUser = this.adminservice.loggedInUsername;
-          this.adminservice.nameEmitter.subscribe((loggedname)=>{
-            this.loggedUser = loggedname;
-          })
+          this.loggedUser = this.userservice.loggedAdmin;
         }
 
         else if(localStorage.getItem('user') && (val.url.includes('homescreen') || val.url.includes('create-product') || val.url.includes('quick-create-product'))){
