@@ -13,7 +13,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { UserSignupComponent } from './Signup/user-signup/user-signup.component';
 
 const routes: Routes = [
-  {path: "login", component: LoginOptionsComponent, children: []},
+  {path: "login", component: UserLoginComponent},
   {path: "userlogin", component: UserLoginComponent},
   {path: "adminlogin", component: AdminLoginComponent},
   {path: "settings", component: SettingsComponent},
