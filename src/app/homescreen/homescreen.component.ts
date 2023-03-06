@@ -26,6 +26,22 @@ export class HomescreenComponent {
 
   constructor(private http: HttpClient, private productservice: ProductsServiceService, private activatedroute: ActivatedRoute, private settingsservice: SettingsService){}
 
+  
+  ngAfterViewInit(): void {
+    
+    const searchVal = fromEvent<any>(this.myInput.nativeElement, 'keyup').pipe(
+      map(event=> event.target.value),
+      debounceTime(500)
+      );
+
+    searchVal.subscribe((res)=>{
+      console.log(res);
+      this.http.get(`http://localhost:3000/products?q=${res}`).subscribe((list: Product[] | QuickProduct[])=>{
+        this.productsList = list;
+      })
+    })
+
+  }
 
   ngOnInit(){
 
@@ -68,6 +84,19 @@ export class HomescreenComponent {
   removeMultiple(){
     this.productservice.removeMultiple(this.deleteMultiple);
     this.ngOnInit();
+  }
+  
+  onSort(event: any){
+    if(event.target.checked){
+      this.productsList.sort((prod1, prod2)=>{
+        return prod1.stock - prod2.stock;
+      })
+      console.log("Sorted");
+    }
+
+    else{
+      this.ngOnInit();
+    }
   }
 
 }
