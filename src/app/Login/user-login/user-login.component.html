@@ -2,7 +2,7 @@
 <!-- Login page -->
 <div class="user-login" *ngIf="!showSignup; else signup">
     <div class="login">
-        <h2>User login</h2>
+        <h2>Login</h2>
         <p>{{LoginErrorOrNot}}</p>
         <form class="common-form" (ngSubmit)="onLogin(userLogin)" #userLogin="ngForm">
             <label class="form-label" for="username">Username</label>
