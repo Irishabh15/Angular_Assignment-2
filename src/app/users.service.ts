@@ -34,24 +34,6 @@ export class UsersService {
   }
 
 
-  // userlogin(form: NgForm){
-  //   console.log(form.value);
-
-  //   this.http.get(`http://localhost:3000/users?name=${form.value.username}&pass=${form.value.pass}`, {observe: 'response'}).
-  //   subscribe((isPresent:any)=>{
-  //     console.log(isPresent);
-  //     if(isPresent && isPresent.body && isPresent.body.length!==0){
-  //       localStorage.setItem('user', JSON.stringify(isPresent.body));
-  //       console.log("User logged in");
-  //       this.route.navigate(['homescreen']);
-  //     }
-  //     else{
-  //       console.warn("User not logged in");
-  //       this.loginError.emit(true);
-  //     }
-  //   })
-  // }
-
   userlogin(form: NgForm){
     console.log(form.value);
 
