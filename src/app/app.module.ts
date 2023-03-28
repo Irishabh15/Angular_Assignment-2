@@ -18,6 +18,7 @@ import { QuickCreateProductComponent } from './quick-create-product/quick-create
 import { ErrorPageComponent } from './error-page/error-page.component';
 import { CanDeactivateGaurdService } from './canDeactivate-gaurd.service';
 import { ResolveGaurd } from './resolve.gaurd';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -41,7 +42,7 @@ import { ResolveGaurd } from './resolve.gaurd';
     FormsModule,
     HttpClientModule,
     ReactiveFormsModule,
-    
+    FontAwesomeModule,
   ],
   providers: [CanDeactivateGaurdService, ResolveGaurd],
   bootstrap: [AppComponent]
