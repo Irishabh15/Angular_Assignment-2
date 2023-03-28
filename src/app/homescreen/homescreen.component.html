@@ -15,10 +15,12 @@
                 <th scope="col">Name</th>
                 <th scope="col">Heading</th>
                 <th scope="col">Subheading</th>
-                <th scope="col">Items</th>
+                <th scope="col">Items <fa-icon [icon]="sortIcon" (click)="sortClicked()" [ngClass]="!sortOrNot? 'blackIcon': 'blueIcon'"></fa-icon> </th>
                 <th scope="col">Product expiry</th>
                 <th scope="col">Tags</th>
                 <th scope="col">Actions</th>
+                
+                <!-- <input type="checkbox" name="check" id="" [(ngModel)]="sortOrNot" (change)="onSort($event)"> -->
             </tr>
         </thead>
         <tbody *ngFor="let product of productsList; let i = index">
