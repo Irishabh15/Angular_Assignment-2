@@ -9,7 +9,7 @@
             <input class="form-input" type="text" name="username" id="username" ngModel autocomplete="off" required>
     
             <label class="form-label" for="pass">Password</label>
-            <input class="form-input" type="text" name="pass" id="pass" ngModel autocomplete="off" required>
+            <input class="form-input" type="password" name="pass" id="pass" ngModel autocomplete="off" required>
     
             <button class="form-button" type="submit" [disabled]="!userLogin.valid" [ngClass]="userLogin.valid==true? 'A': 'B'">Login</button>
         </form>
@@ -35,7 +35,7 @@
                 <input class="form-input" type="email" name="email" id="email" ngModel autocomplete="off" required email>
         
                 <label class="form-label" for="pass">Password</label>
-                <input class="form-input" type="text" name="pass" id="pass" ngModel autocomplete="off" required>
+                <input class="form-input" type="password" name="pass" id="pass" ngModel autocomplete="off" required>
         
                 <button class="form-button" type="submit" [disabled]="!userSignUp.valid" [ngClass]="userSignUp.valid==true? 'A': 'B'">Sign Up</button>
             </form>
