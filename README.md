@@ -1,1 +1,1 @@
-# ModMed_Angular_Assignment-2
+# Angular_Assignment-2
